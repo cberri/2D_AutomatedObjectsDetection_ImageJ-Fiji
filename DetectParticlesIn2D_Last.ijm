@@ -148,7 +148,7 @@ function OutputDirectory(outputPath, year, month, dayOfMonth, second) {
 	// Split the string by file separtor
 	splitString = split(dirOutRoot, File.separator); 
 	
-	for(i=0; i<splitString.length; i++) {
+	for (i=0; i<splitString.length; i++) {
 
 		lastString = splitString[i];
 		
@@ -443,9 +443,9 @@ macro DetectParticlesIn2D {
 			
 			// Remove the file extension .tiff
 			dotIndex = indexOf(inputTitleRaw, ".");
-            title = substring(inputTitleRaw, 0, dotIndex);
+			title = substring(inputTitleRaw, 0, dotIndex);
 
-            // Check if the output directory already exist
+			// Check if the output directory already exist
 			if (File.exists(dirOutRoot)) {
 						
 				// Create the image output directory inside the output root directory
